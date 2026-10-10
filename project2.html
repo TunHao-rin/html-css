@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester United Shop</title>
+    <style>
+:root {
+    --primary-color: #DA291C;
+    --secondary-color: #FBE122;
+    --background-color: #F5E6D3;
+    --card-color: #FFFDF9;
+    --text-color: #242424;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 8%;
+    background-color: var(--primary-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: var(--secondary-color);
+}
+
+.jersey {
+    padding: 50px 8%;
+}
+
+.jersey h1 {
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.jersey > p {
+    margin-bottom: 30px;
+}
+
+.Trainingwear {
+    padding: 50px 8%;
+    background-color: #EFE0CC;
+}
+
+.Trainingwear h2 {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.Trainingwear > p {
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background-color: var(--card-color);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.product-card p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+
+footer {
+    background-color: #242424;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    .jersey,
+    .Trainingwear {
+        padding: 35px 5%;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .product-card img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 520px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .jersey h1 {
+        font-size: 30px;
+    }
+
+    .Trainingwear h2 {
+        font-size: 27px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 260px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="blt2bc53adff89a0291.webp" alt="Manchester United Logo">
+            Manchester United Shop
+        </div>
+        <a href="https://www.manutd.com/en/shop" target="_blank">Visit Official Store</a>
+        <a href="https://en.wikipedia.org/wiki/Manchester_United_F.C." target="_blank">Learn More</a>
+        <a href="https://www.manutd.com/en" target="_blank">Official Website</a>
+    </header>
+    <nav class="jersey">
+        <h1>Jerseys</h1>
+        <p>Discover our latest collection of Manchester United jerseys, available in various sizes and styles.</p>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="mat-truoc-ao-bong-da-manchester-united-san-nha-26-27-player-ka6868_8385f1998b084eff858db0a2764e4504_1024x1024.jpg.webp" alt="Home Jersey 1">
+                <h3>Home Jersey 1</h3>
+                <p>$89.99</p>
+            </div>
+            <div class="product-card">
+                <img src="89_8c9a86f6bf47425fae13d9a0593a6317_large.jpg.webp" alt="Away Jersey 2">
+                <h3>Away Jersey 2</h3>
+                <p>$79.99</p>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </nav>
+    <section class="Trainingwear">
+        <h2>Trainingwear</h2>
+        <p>Explore our range of trainingwear, including jerseys, shorts, and more.</p>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="37454708_l.jpg.avif" alt="Training Jersey 1">
+                <h3>Training Jersey 1</h3>
+                <p>$49.99</p>
+            </div>
+            <div class="product-card">
+                <img src="37965708_xxl.jpg.avif" alt="Training Jersey 2">
+                <h3>Training Jersey 2</h3>
+                <p>$59.99</p>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Manchester United. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
